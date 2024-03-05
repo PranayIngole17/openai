@@ -103,7 +103,7 @@ def extract_pdf(path):
                                     page_data += text_line.get_text()
                                     break
 
-    out_file = open("Sample1.json", "w", encoding='utf-8')  # Add encoding='utf-8'
+    out_file = open("results/Sample1.json", "w", encoding='utf-8')  # Add encoding='utf-8'
     json.dump(temp_pdf, out_file, indent=6, ensure_ascii=False)  # Add ensure_ascii=False
     out_file.close()
 
